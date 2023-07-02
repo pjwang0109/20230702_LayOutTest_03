@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>01 flex</title>
+    <!-- icon 連結 -->
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+
+    <!-- CSS 連結 -->
+    <link rel="stylesheet" href="" />
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      .contain {
+        width: 100%;
+        background-color: #eee;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px;
+      }
+      .container_top {
+        width: 960px;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        /* border: 1px solid blue; */
+      }
+      .container_top .pic1 {
+        width: 170px;
+        height: 170px;
+        /* border: 1px solid red; */
+      }
+      .container_top .pic1 img {
+        width: 100%;
+        height: 100%;
+        margin: auto;
+        vertical-align: top;
+      }
+      .container_top h2 {
+        font-size: 35px;
+        font-weight: normal;
+        font-family: sans-serif;
+        margin-left: 75px;
+        margin-right: 10px;
+        /* background-color: #fa0; */
+      }
+
+      .container_bottom {
+        /* border: 1px solid black; */
+        width: 960px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .card_left {
+        width: 200px;
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        justify-content: end;
+        /* border: 1px solid red; */
+        margin: 20px 10px;
+      }
+      .card_left .pic3 {
+        width: 80px;
+        height: 80px;
+        margin-bottom:20px ;
+      }
+      .card_left .pic3 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+      .card_left .pic4 {
+        width: 160px;
+        height: 170px;
+      }
+      .card_left .pic4 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+
+      .card_center {
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        /* justify-content: center; */
+        margin: 20px 10px;
+        /* border: 1px solid red; */
+      }
+      .card_center .pic2 {
+        width: 350px;
+        height: 300px;
+        
+      }
+      .card_center .pic2 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+      .card_center .pic5 {
+        width: 170px;
+        height: 170px;
+        margin-top: 20px;
+      }
+      .card_center .pic5 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+      .card_center .pic6 {
+        width: 80px;
+        height: 80px;
+        margin-top: 20px;
+        margin-left: 20px;
+      }
+      .card_center .pic6 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+
+      .card_right {
+        width: 350px;
+        display: flex;
+        flex-wrap: wrap;
+        margin: 20px 10px;
+        /* border: 1px solid red; */
+      }
+      .card_right .list_top {
+        width: 100%;
+        margin: 15px auto;
+        /* background-color: #fff; */
+        line-height: 1.75em;
+        margin-top: -30px;
+        margin-left: 25px;
+      }
+      .card_right .list_top p{
+        font-family: sans-serif;
+      }
+
+      .list_left {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0 20px;
+      }
+      .list_left .pic7 {
+        width: 200px;
+        height: 280px;
+        margin-bottom: 20px;
+      }
+      .list_left .pic7 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+      .list_left .pic10 {
+        width: 80px;
+        height: 80px;
+      }
+      .list_left .pic10 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+
+      .list_right {
+        display: flex;
+        flex-direction: column;
+      }
+      .list_right .pic8 {
+        width: 100px;
+        height: 100px;
+        margin-bottom: 30px;
+      }
+      .list_right .pic8 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+      .list_right .pic9 {
+        width: 90px;
+        height: 90px;
+      }
+      .list_right .pic9 img {
+        width: 100%;
+        height: 100%;
+        vertical-align: top;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="contain">
+      <div class="container_top">
+        <div class="pic1">
+          <img src="./pic/1.jpg" />
+        </div>
+        <h2>
+          <strong>WELCOME</strong> TO OUR <br />FITNESS <strong>CLUB</strong>
+        </h2>
+      </div>
+
+      <div class="container_bottom">
+        <div class="card_left">
+          <div class="pic3">
+            <img src="./pic/3.jpg" alt="" />
+          </div>
+          <div class="pic4">
+            <img src="./pic/4.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="card_center">
+          <div class="pic2">
+            <img src="./pic/2.jpg" alt="" />
+          </div>
+          <div class="pic5">
+            <img src="./pic/5.jpg" alt="" />
+          </div>
+          <div class="pic6">
+            <img src="./pic/6.jpg" alt="" />
+          </div>
+        </div>
+
+        <div class="card_right">
+            <div class="list_top">
+          <p>
+            Profit is the fitness club that makes fitness totally accessible to
+            everybody. We promise to help people from all walks of life achieve
+            their individual health and fitness goals — no matter their shape,
+            age, and experience.
+          </p></div>
+
+          <div class="list_left">
+            <div class="pic7">
+              <img src="./pic/7.jpg" alt="" />
+            </div>
+            <div class="pic10">
+              <img src="./pic/10.jpg" alt="" />
+            </div>
+          </div>
+
+          <div class="list_right">
+            <div class="pic8">
+              <img src="./pic/8.jpg" alt="" />
+            </div>
+            <div class="pic9">
+              <img src="./pic/9.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src=""></script>
+</html>
